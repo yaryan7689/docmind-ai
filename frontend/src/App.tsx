@@ -405,6 +405,7 @@ export const App: React.FC = () => {
               <DocumentCompareView
                 documents={documents}
                 apiKey={apiKey}
+                provider={provider}
               />
             )}
           </div>

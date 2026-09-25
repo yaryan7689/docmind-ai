@@ -36,9 +36,11 @@ If payment remains unpaid for more than 45 days after the invoice date, Provider
 Provider shall maintain SOC 2 Type II compliance and ISO 27001 certifications. All Customer Data at rest must be encrypted using AES-256 and in transit using TLS 1.3.
 In the event of a confirmed security breach involving Customer personal data, Provider must notify Customer in writing within 24 hours of confirmation.""",
                 "tables": [
-                    ["Tier", "Monthly Minimum", "Core-Hour Rate", "Support SLA"],
-                    ["Enterprise Core", "$45,000", "$0.082", "15 min response (24/7)"],
-                    ["High-Compute Add-on", "$18,000", "$0.075", "15 min response (24/7)"]
+                    [
+                        ["Tier", "Monthly Minimum", "Core-Hour Rate", "Support SLA"],
+                        ["Enterprise Core", "$45,000", "$0.082", "15 min response (24/7)"],
+                        ["High-Compute Add-on", "$18,000", "$0.075", "15 min response (24/7)"]
+                    ]
                 ]
             },
             {
@@ -113,11 +115,13 @@ Key Financial Highlights:
 - Non-GAAP Diluted EPS: $1.84, representing 32% YoY expansion (consensus estimate was $1.68).
 - Cash, cash equivalents, and marketable securities totaled $6.85 Billion at quarter-end.""",
                 "tables": [
-                    ["Segment", "Q3 2025 Revenue", "Q3 2024 Revenue", "YoY Growth"],
-                    ["Cloud Infrastructure", "$1,920M", "$1,360M", "+41.2%"],
-                    ["Enterprise Software", "$1,450M", "$1,320M", "+9.8%"],
-                    ["Hardware & Devices", "$910M", "$755M", "+20.5%"],
-                    ["Total Revenue", "$4,280M", "$3,435M", "+24.6%"]
+                    [
+                        ["Segment", "Q3 2025 Revenue", "Q3 2024 Revenue", "YoY Growth"],
+                        ["Cloud Infrastructure", "$1,920M", "$1,360M", "+41.2%"],
+                        ["Enterprise Software", "$1,450M", "$1,320M", "+9.8%"],
+                        ["Hardware & Devices", "$910M", "$755M", "+20.5%"],
+                        ["Total Revenue", "$4,280M", "$3,435M", "+24.6%"]
+                    ]
                 ]
             },
             {
@@ -198,10 +202,12 @@ Trial Cohort: 5,420 multi-center patients across 8 tertiary cancer research hosp
 - Area Under the Receiver Operating Characteristic (ROC-AUC): 0.967 (95% CI: 0.958 - 0.975).
 - Mean Inference Latency: 4.2 seconds per patient study on NVIDIA H100 GPU tensor cores with full attention saliency heatmaps.""",
                 "tables": [
-                    ["Diagnostic Method", "Sensitivity", "Specificity", "ROC-AUC", "Biopsy Reduction"],
-                    ["OmniPath-Net (AI)", "94.8%", "92.4%", "0.967", "-38.6%"],
-                    ["Standard Radiologist Panel", "81.2%", "86.1%", "0.884", "Baseline"],
-                    ["LDCT Alone", "76.4%", "79.5%", "0.821", "+12.4%"]
+                    [
+                        ["Diagnostic Method", "Sensitivity", "Specificity", "ROC-AUC", "Biopsy Reduction"],
+                        ["OmniPath-Net (AI)", "94.8%", "92.4%", "0.967", "-38.6%"],
+                        ["Standard Radiologist Panel", "81.2%", "86.1%", "0.884", "Baseline"],
+                        ["LDCT Alone", "76.4%", "79.5%", "0.821", "+12.4%"]
+                    ]
                 ]
             },
             {

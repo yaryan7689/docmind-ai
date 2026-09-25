@@ -9,11 +9,13 @@ import { api } from '../services/api';
 interface DocumentCompareViewProps {
   documents: DocumentItem[];
   apiKey: string;
+  provider?: string;
 }
 
 export const DocumentCompareView: React.FC<DocumentCompareViewProps> = ({
   documents,
   apiKey,
+  provider,
 }) => {
   const [doc1Id, setDoc1Id] = useState<string>(documents[0]?.id || '');
   const [doc2Id, setDoc2Id] = useState<string>(documents[1]?.id || documents[0]?.id || '');
@@ -24,7 +26,7 @@ export const DocumentCompareView: React.FC<DocumentCompareViewProps> = ({
     if (!doc1Id || !doc2Id) return;
     setIsLoading(true);
     try {
-      const res = await api.compareDocuments(doc1Id, doc2Id, apiKey);
+      const res = await api.compareDocuments(doc1Id, doc2Id, provider, apiKey);
       setDiffResult(res);
     } catch (err) {
       console.error(err);
